@@ -1,0 +1,340 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: hsl(158, 36%, 37%);
+    --bckg: hsl(30, 38%, 92%);
+}
+
+body { 
+    background-color: var(--bckg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border-end-start-radius: 5px;
+    border-start-start-radius: 5px;
+    margin-top: 20px;
+}
+
+
+
+
+/*
+----------------------------------------------------
+Div img
+----------------------------------------------------
+*/
+
+
+#container-img {
+    height: 220px;
+    width: 325px;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/*
+----------------------------------------------------
+Div Text
+----------------------------------------------------
+*/
+
+
+#container-text {
+    width: 325px;
+    padding: 5% 5%;
+}
+
+#container-text #product-name {
+    color: gray;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6px;
+    font-size: 12px;
+}
+
+#container-text h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+    margin: 20px 0px;
+}
+
+#container-text p {
+    color: gray;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin: 20px 0px;
+}
+
+
+#container-text button {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    color: white;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+#container-text svg {
+    transition: all 0.3s ease-out;
+}
+
+#container-text button:hover {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+#container-text button:active {
+    filter: brightness(80%);
+}
+
+#container-text button:hover > svg {
+    filter: invert(100%);
+}
+
+#container-text button svg {
+    position: relative;
+    top: 3px;
+    left: -6px;
+}
+
+
+
+/*
+----------------------------------------------------
+Div Prices
+----------------------------------------------------
+*/
+
+
+#container-prices {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+#container-prices #new-price {
+    color: var(--primary);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#container-prices #old-price {
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 40px;
+}
+
+
+
+/*
+----------------------------------------------------
+Author
+----------------------------------------------------
+*/
+
+
+.attribution {
+    margin: 20px 0;
+}
+
+
+
+
+
+
+/*
+----------------------------------------------------
+Media
+----------------------------------------------------
+*/
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+
+main {
+    background-color: white; 
+    display: flex;
+    flex-direction: row;
+    /* width: 80em; */
+    border-radius: 5px;
+    border-end-start-radius: 5px;
+    border-start-start-radius: 5px;
+}
+
+
+
+
+/*
+----------------------------------------------------
+Div img
+----------------------------------------------------
+*/
+
+
+#container-img {
+    height: 420px;
+    width: 300px;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-end-start-radius: 5px;
+    border-start-start-radius: 5px;
+}
+
+
+/*
+----------------------------------------------------
+Div Text
+----------------------------------------------------
+*/
+
+
+#container-text {
+    width: 300px;
+    padding: 5% 5%;
+}
+
+#container-text #product-name {
+    color: gray;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6px;
+    font-size: 12px;
+}
+
+#container-text h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+    margin: 20px 0px;
+}
+
+#container-text p {
+    color: gray;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin: 20px 0px;
+}
+
+
+#container-text button {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    color: white;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+#container-text svg {
+    transition: all 0.3s ease-out;
+}
+
+#container-text button:hover {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+#container-text button:active {
+    filter: brightness(80%);
+}
+
+#container-text button:hover > svg {
+    filter: invert(100%);
+}
+
+#container-text button svg {
+    position: relative;
+    top: 3px;
+    left: -6px;
+}
+
+
+
+/*
+----------------------------------------------------
+Div Prices
+----------------------------------------------------
+*/
+
+
+#container-prices {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+#container-prices #new-price {
+    color: var(--primary);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#container-prices #old-price {
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 40px;
+}
+
+
+
+/*
+----------------------------------------------------
+Author
+----------------------------------------------------
+*/
+
+
+.attribution {
+    margin: 20px 0;
+}
+
+
+
+
+}
+
